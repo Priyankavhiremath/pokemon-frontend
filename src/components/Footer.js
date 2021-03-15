@@ -1,12 +1,12 @@
 
 import React from "react";
-import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="btn-info  text-center text-lg-start">
-        
-                    <section class="mb-4 primarycolor">
+            <div>
+            <section class="mb12- align-center primarycolor">
+
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-twitter"></i></a>
@@ -21,13 +21,11 @@ const Footer = () => {
 
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-discord"></i></a>
             </section>
-        
-            <div className="text-center p-3">
-                © 2021 Copyright:
-                <Link class="text-dark" to="https://google.com/">
-                    PokeFight
-                </Link>
             </div>
+            <div className="text-center p-3">
+                © 2021 Copyright: PokeFight
+             </div>
+             <div><img src="https://pokewiki.de/images/c/c3/Sugimori_054.png" width="200" /></div>
         </footer>
     );
 };
