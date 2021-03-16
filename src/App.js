@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
+import {Switch, Route} from "react-router-dom";
+import CardContainer from "./components/CardContainer";
 
 import fetchdata from "./api";
 
 function App() {
   const [pokemons, setPokemons] = useState();
-  const [onePokemon, setOnePokemon] = useState();
-  const [pokemonDetalil, setPokemonDetalil] = useState([]);
+  const [pokemonDetail, setPokemonDetail] = useState([]);
 
   useEffect(() => {
     getPokemons();
-    getOnePokemon();
   }, []);
 
   const getPokemons = () => {
@@ -21,24 +21,24 @@ function App() {
         setPokemons(data.results);
         data.results.map( pokemon => {
           fetchdata(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`).then((data) => {
-            setPokemonDetalil( prev => [...prev, data]);
+            setPokemonDetail( prev => [...prev, data]);
           });
         })
       }
-    )
-    ;
-  };
-
-  const getOnePokemon = (name = "ditto") => {
-    fetchdata(`https://pokeapi.co/api/v2/pokemon/${name}`).then((data) => {
-      setOnePokemon(data);
-    });
+    );
   };
 
   return (
     <div className="App">
       <Header />
-      {pokemonDetalil && <Main pokemons={pokemonDetalil} />}
+      <Switch>
+        <Route exact  path="/">
+        {pokemonDetail && <Main pokemons={pokemonDetail} />}
+        </Route>
+        <Route path="/pokemon/:pokeName">
+            <CardContainer/>
+        </Route>
+      </Switch>
       <Footer />
     </div>
   );

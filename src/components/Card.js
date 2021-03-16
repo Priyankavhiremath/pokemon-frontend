@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -18,16 +19,23 @@ const useStyles = makeStyles({
 });
 
 export default function PokemonCard({ pokemon }) {
+  // console.log(pokemon);
   const classes = useStyles();
+  const history = useHistory();
   const {
+    id,
     species: { name },
     sprites: { front_default },
     abilities,
     base_experience,
   } = pokemon;
 
+  const handleClick = (name) =>{
+    history.push(`/pokemon/${name}`);
+  }
+
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} onClick={ (e) => handleClick(name)}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
