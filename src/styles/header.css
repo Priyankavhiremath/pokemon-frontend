@@ -6,16 +6,17 @@
     height: 5em;
     width: auto;
     animation: pulse 5s infinite;
+}
   
   @keyframes pulse {
     0% {
-      background-color: #FEDE01 ;
+      background-color: #FEDE01;
     }
     100% {
       background-color: #E50404;
     }
   }
-}
+
   
 
     
