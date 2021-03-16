@@ -1,16 +1,26 @@
 
 .header {
     overflow: hidden;
-    background-color:  #FEDE01 !important;
     padding-top: 0.7em;
     margin: auto;
     height: 5em;
     width: auto;
-  }
+    animation: pulse 5s infinite;
   
-  .img-header {
-    margin-left: 2em;
+  @keyframes pulse {
+    0% {
+      background-color: #FEDE01 ;
+    }
+    100% {
+      background-color: #E50404;
+    }
+  }
 }
+  
+
+    
+  .img-header {
+    margin-left: 2em;}
  
 .logo {
     background-color: #E50404;
