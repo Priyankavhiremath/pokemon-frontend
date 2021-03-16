@@ -18,7 +18,11 @@ const Header = () => {
           <a href="#about" target= "_blank">About</a>
         </div>
       </div>
+    
+    <div class="MuiBox-root jss8 jss6"><div class="MuiBox-root jss9 jss7">
+    One Love - please talk before fighting!</div></div>
     </div>
+
   );
 };
 

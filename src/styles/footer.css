@@ -1,10 +1,14 @@
 footer {
-    background-color: #DCB677 !important;
-    color: #F7DAA0 !important;
+    background-color: #FEDE01 !important;
+    color: #DDB777 !important;
+    font-size: 0.7em;
+    margin-top: 3em;
+    height: 5em;
+    width: auto;
 }
 
 
 img {
-    margin-left: 33em;
-    margin-bottom: 1.3em;
+    margin-bottom: 2em;
+    justify-content: flex-end;
 }
