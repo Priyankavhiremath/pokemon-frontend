@@ -17,11 +17,24 @@
     }
   }
 
-  
-
-    
   .img-header {
-    margin-left: 2em;}
+    margin-left: 25em;  
+  }
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(70px, 0);
+    }
+    
+    80% {
+      transform: translate(-50px, 0);
+    }
+  }
+  
+ 
  
 .logo {
     background-color: #E50404;
@@ -43,6 +56,9 @@
   .header a.logo {
     font-size: 25px;
     font-weight: bold;
+    animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
   }
   
   .header a:hover {
