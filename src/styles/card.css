@@ -1,0 +1,28 @@
+.card-detail-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-detail-content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DCB677;
+    border-radius: .2rem;
+    box-shadow: 1px 2px 1px ;
+    padding: 1rem;
+}
+
+.card-image{
+    border: 1px solid #DCB677;
+    border-radius: 50%;
+    box-shadow: 1px 2px 1px ;
+}
+
+.MuiButton-text{
+    text-transform: none;
+}
