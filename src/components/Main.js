@@ -3,18 +3,17 @@ import Card from "./Card";
 
 const Main = ({ pokemons }) => {
   return (
-    <Container maxWidth="md">
-      <Grid container spacing={3}>
+    <Container maxWidth="md" className="main-container">
+      <Grid container >
         <Grid
           container
           item
           sm={12}
-          style={{ border: "1px solid black" }}
           spacing={3}
         >
           {pokemons.map((pokemon) => {
             return (
-              <Grid item sm={3} spacing={4}>
+              <Grid item sm={3} >
                 <Card key={pokemon.id} pokemon={pokemon} />
               </Grid>
             );
