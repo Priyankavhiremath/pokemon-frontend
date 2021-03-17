@@ -10,7 +10,6 @@ const CardContainer = () =>{
     useEffect( () => {
 
         if(pokeName) getOnePokemon(pokeName);
-        
     }, [])
 
     const getOnePokemon = (name = "ditto") => {
@@ -23,8 +22,6 @@ const CardContainer = () =>{
         <>
         {onePokemon && <CardDetail  onePokemon={onePokemon}/>}
         </>
-
     )
 }
-
 export default CardContainer; 
