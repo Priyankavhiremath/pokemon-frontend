@@ -18,7 +18,8 @@ function App() {
 
   const getPokemons = () => {
     fetchdata("https://pokeapi.co/api/v2/pokemon?limit=30&offset=0")
-    .then((data) => {setPokemons(data.results);
+    .then((data) => {
+        setPokemons(data.results);
         data.results.map( pokemon => {
           fetchdata(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`).then((data) => {
             setPokemonDetail( prev => [...prev, data]);
@@ -32,14 +33,14 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route exact  path="/">
+        <Route exact path="/">
         {pokemonDetail && <Main pokemons={pokemonDetail} />}
         </Route>
-        <Route path="/pokemon/:pokeName">
+        <Route exact path="/pokemon/:pokeName">
             <CardContainer/>
         </Route>
-        <Route path= "/pokemon/fight/:pokeName"> 
-            <BattleCard pokemons={pokemons}/>
+        <Route exact path= "/pokemon/fight/:pokeName"> 
+            <BattleCard/>
         </Route>
       </Switch>
       <Footer />
