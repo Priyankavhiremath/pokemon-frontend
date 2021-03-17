@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import {Switch, Route} from "react-router-dom";
 import CardContainer from "./components/CardContainer";
+import BattleCard from "./components/BattleCard"
 
 import fetchdata from "./api";
 
@@ -16,9 +17,8 @@ function App() {
   }, []);
 
   const getPokemons = () => {
-    fetchdata("https://pokeapi.co/api/v2/pokemon?limit=30&offset=0").then(
-      (data) => {
-        setPokemons(data.results);
+    fetchdata("https://pokeapi.co/api/v2/pokemon?limit=30&offset=0")
+    .then((data) => {setPokemons(data.results);
         data.results.map( pokemon => {
           fetchdata(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`).then((data) => {
             setPokemonDetail( prev => [...prev, data]);
@@ -37,6 +37,9 @@ function App() {
         </Route>
         <Route path="/pokemon/:pokeName">
             <CardContainer/>
+        </Route>
+        <Route path= "/pokemon/fight/:pokeName"> 
+            <BattleCard pokemons={pokemons}/>
         </Route>
       </Switch>
       <Footer />
