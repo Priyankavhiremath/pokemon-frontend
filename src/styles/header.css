@@ -1,21 +1,50 @@
 
 .header {
     overflow: hidden;
-    background-color:  #DCB677 !important;
-    padding: 2em;
+    padding-top: 0.7em;
+    margin: auto;
+    height: 5em;
+    width: auto;
+    animation: pulse 5s infinite;
+}
+  
+  @keyframes pulse {
+    0% {
+      background-color: #FEDE01;
+    }
+    100% {
+      background-color: #E50404;
+    }
+  }
+
+  .img-header {
+    margin-left: 25em;  
+  }
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(70px, 0);
+    }
+    
+    80% {
+      transform: translate(-50px, 0);
+    }
   }
   
-  .img-header {
-    margin-left: 2em;
-}
+ 
  
 .logo {
+    background-color: #E50404;
     margin-left: 2em;
 }
 
+
   .header a {
     float: left;
-    color: #F7DAA0;
+    color: #DDB777;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -27,29 +56,41 @@
   .header a.logo {
     font-size: 25px;
     font-weight: bold;
+    animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
   }
   
-  /* Change the background color on mouse-over */
   .header a:hover {
     background-color: #F7DAA0;
-    color: #DCB677;
-
   }
   
-  /* Style the active/current link*/
   .header a.active {
     background-color: #F7DAA0;
-    color: #DCB677;
+    color: #DDB777;
   }
   
-  /* Float the link section to the right */
   .header-right {
     float: right;
     margin-right: 4.5em;
-
   }
   
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  .jss6 {
+      color: #E50404;
+      height: 500px;
+      display: flex;
+      position: relative;
+      font-size: 2rem;
+      font-style: bold;
+      align-items: center;
+      background-size: cover;
+      justify-content: center;
+      background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), 
+      url(https://vignette.wikia.nocookie.net/serien/images/f/f9/Pokemon_Poster01.jpg/revision/latest?cb=20190214135305&path-prefix=de);
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
