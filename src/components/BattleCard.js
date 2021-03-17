@@ -29,8 +29,7 @@ const BattleCard = () =>{
 
     return(
         <>
-        <h4>POKE FIGHT</h4>
-        {userPokemon && randomPokemon && <BattleCardDetail  userPokemon={userPokemon} randomPokemon={randomPokemon}/>}
+            {userPokemon && randomPokemon && <BattleCardDetail  userPokemon={userPokemon} randomPokemon={randomPokemon}/>}
         </>
     )
 }
