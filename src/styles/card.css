@@ -26,3 +26,16 @@
 .MuiButton-text{
     text-transform: none;
 }
+
+.battleCard_container{
+    justify-content: center; 
+    text-align: center;
+    padding: 2rem
+}
+
+.battleCard_fighters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
