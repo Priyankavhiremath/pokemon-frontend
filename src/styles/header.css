@@ -89,7 +89,24 @@
       url(https://vignette.wikia.nocookie.net/serien/images/f/f9/Pokemon_Poster01.jpg/revision/latest?cb=20190214135305&path-prefix=de);
       background-repeat: no-repeat;
       background-position: center;
+      
   }
+  .jss6 h1{
+    position: relative;
+    z-index: 0;
+  }
+
+  .jss6 h1::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.678);
+    z-index: -1;
+  }
+
 
   @media screen and (max-width: 500px) {
     .header a {

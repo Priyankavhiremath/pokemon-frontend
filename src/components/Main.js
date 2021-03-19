@@ -2,19 +2,21 @@ import { Grid, Container } from "@material-ui/core";
 import Card from "./Card";
 
 const Main = ({ pokemons }) => {
+  console.log(pokemons.length);
   return (
     <Container maxWidth="md" className="main-container">
-      <Grid container >
+      <Grid container className="main-poke-content">
         <Grid
           container
           item
           sm={12}
           spacing={3}
+          className="main-poke-content"
         >
           {pokemons.map((pokemon) => {
             return (
-              <Grid item sm={3} >
-                <Card key={pokemon.id} pokemon={pokemon} />
+              <Grid item xm={6}  md={3}  key={pokemon.id} className="main-poke-content">
+                <Card  pokemon={pokemon} />
               </Grid>
             );
           })}

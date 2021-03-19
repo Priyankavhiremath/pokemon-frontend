@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import BattleCardDesign from './BattleCardDesign';
+import vs_logo from '../image/vs.png';
 
 const useStyles = makeStyles({
   root: {
@@ -38,13 +39,16 @@ const BattleCardDetail = ({ userPokemon, randomPokemon }) => {
         <h2>POKE FIGHT</h2>
         <div className="battleCard_fighters">        
           <BattleCardDesign pokemon={userPokemon}/>
-          <h3>V/S</h3>
+          <img src={vs_logo} alt="versus"  width="200"/>
           <BattleCardDesign pokemon={randomPokemon}/>          
         </div>
         <Button variant="contained" color="primary" onClick={handleFight} >Fight</Button>
+        <br />
+        <br />
         {winner && (
             <>
-            <p>{winner}</p>
+            <h3>{winner}</h3>
+            <br />
             <Button variant="contained" color="secondary" onClick={handleFightAgain}>Fight Again</Button>
             </>
         )}

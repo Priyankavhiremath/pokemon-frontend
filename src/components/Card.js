@@ -11,15 +11,14 @@ import { useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 150,
+    width: 165,
   },
   media: {
-    height: 120,
+    height: 150,
   },
 });
 
 export default function PokemonCard({ pokemon }) {
-  // console.log(pokemon);
   const classes = useStyles();
   const history = useHistory();
   const {
