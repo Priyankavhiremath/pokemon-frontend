@@ -1,4 +1,6 @@
 .battleCard_container{
+    background-image:  url('https://images-ext-1.discordapp.net/external/I7PT8y-wJzC5j0JeOVFvADnnFQwWrXOI8rC6HLHKiwg/%3Fid%3DOIP.GQYQNvdSJWLD474zL6H0vAHaEc%26pid%3DApi/https/tse2.mm.bing.net/th');
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,6 +9,7 @@
 }
 
 .battleCard_fighters{
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
