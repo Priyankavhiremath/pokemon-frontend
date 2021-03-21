@@ -34,8 +34,8 @@ function App() {
   };
 
   return (
-    <div className="App" style={{backgroundImage:'https://cdn.vox-cdn.com/thumbor/hYliqDMZqJL1Jw71v1hhI6vVOUc=/312x0:1746x956/1820x1213/filters:focal(312x0:1746x956):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/37251612/pokemon-list.0.0.png'}}>
-      
+    <div className="App">
+
       <Header />
       {isloader && <Loader />}
       <Switch>
