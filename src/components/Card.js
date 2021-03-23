@@ -35,6 +35,7 @@ export default function PokemonCard({ pokemon }) {
 
   return (
     <Card className={classes.root} onClick={ (e) => handleClick(name)}>
+      
       <CardActionArea>
         <CardMedia
           className={classes.media}
