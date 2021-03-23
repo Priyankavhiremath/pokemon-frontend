@@ -1,11 +1,22 @@
 .battleCard_container{
-    background-image:  url('https://images-ext-1.discordapp.net/external/I7PT8y-wJzC5j0JeOVFvADnnFQwWrXOI8rC6HLHKiwg/%3Fid%3DOIP.GQYQNvdSJWLD474zL6H0vAHaEc%26pid%3DApi/https/tse2.mm.bing.net/th');
+    background-image: url('https://images-ext-1.discordapp.net/external/I7PT8y-wJzC5j0JeOVFvADnnFQwWrXOI8rC6HLHKiwg/%3Fid%3DOIP.GQYQNvdSJWLD474zL6H0vAHaEc%26pid%3DApi/https/tse2.mm.bing.net/th') opacity(0.5) ;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.battleCard_container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
 
 .battleCard_fighters{
     

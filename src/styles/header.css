@@ -5,7 +5,7 @@
     margin: auto;
     height: 5em;
     width: auto;
-    animation: pulse 5s infinite;
+    animation: pulse 7s infinite;
 }
   
   @keyframes pulse {
@@ -18,7 +18,7 @@
   }
 
   .img-header {
-    margin-left: 25em;  
+    margin-left: 23em;  
   }
   @keyframes nudge {
     0%, 100% {
@@ -94,6 +94,7 @@
   .jss6 h1{
     position: relative;
     z-index: 0;
+    opacity: 0.7;
   }
 
   .jss6 h1::before{
@@ -103,7 +104,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: rgba(255, 255, 255, 0.178);
     z-index: -1;
   }
 
