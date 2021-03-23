@@ -2,7 +2,6 @@ import { Grid, Container } from "@material-ui/core";
 import Card from "./Card";
 
 const Main = ({ pokemons }) => {
-  console.log(pokemons.length);
   return (
     <Container maxWidth="md" className="main-container">
       <Grid container className="main-poke-content">

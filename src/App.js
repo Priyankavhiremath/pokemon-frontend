@@ -6,6 +6,7 @@ import {Switch, Route} from "react-router-dom";
 import CardContainer from "./components/CardContainer";
 import BattleCard from "./components/BattleCard"
 import Loader from './components/Loader';
+import LeaderBoard from './components/LeaderBoard';
 
 import fetchdata from "./api";
 
@@ -47,6 +48,9 @@ function App() {
         </Route>
         <Route exact path= "/pokemon/fight/:pokeName"> 
             <BattleCard/>
+        </Route>
+        <Route exact path="/leaderboard">
+            <LeaderBoard />
         </Route>
       </Switch>
       <Footer />

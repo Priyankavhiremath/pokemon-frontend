@@ -42,7 +42,7 @@
 }
 
 
-  .header a {
+  .header a, header Link{
     float: left;
     color: #DDB777;
     text-align: center;

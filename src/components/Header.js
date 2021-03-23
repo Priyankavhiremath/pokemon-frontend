@@ -1,3 +1,5 @@
+import { Link} from 'react-router-dom';
+
 const Header = () => {
   return (
     <div>
@@ -11,15 +13,14 @@ const Header = () => {
           PokeFive
         </a>
         <div class="header-right">
-          <a class="active" href="#fight" target="_blank">
+          {/* <a class="active" href="#fight" target="_blank">
             Fight
-          </a>
-          <a href="#more" target="_blank">
-            More
-          </a>
-          <a href="#about" target="_blank">
+          </a> */}
+          <Link to="/"> Fight</Link>
+          <Link to="/leaderboard"> LeaderBoard</Link>
+          {/* <a href="#about" target="_blank">
             About
-          </a>
+          </a> */}
         </div>
       </div>
 
