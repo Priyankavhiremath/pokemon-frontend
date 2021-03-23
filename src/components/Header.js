@@ -1,5 +1,4 @@
 import { Link} from 'react-router-dom';
-
 const Header = () => {
   return (
     <div>
@@ -13,17 +12,11 @@ const Header = () => {
           PokeFive
         </a>
         <div class="header-right">
-          {/* <a class="active" href="#fight" target="_blank">
-            Fight
-          </a> */}
           <Link to="/"> Fight</Link>
           <Link to="/leaderboard"> LeaderBoard</Link>
-          {/* <a href="#about" target="_blank">
-            About
-          </a> */}
         </div>
       </div>
-
+  
       <div class="MuiBox-root jss8 jss6">
         <div class="MuiBox-root jss9 jss7">
           <h1>One Love - please talk before fighting!</h1>
@@ -31,6 +24,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
-
-export default Header;
+  };
+  
+  export default Header;

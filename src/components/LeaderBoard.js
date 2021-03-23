@@ -11,9 +11,9 @@ const LeaderBoard = () =>{
 
     return(
         <>
-        {results && results.map( result =>{
+        {results && results.map( (result, index) =>{
             return(
-                <Fragment key={result.id}>
+                <Fragment key={index}>
                     <p>{result.user_poke_name}</p>
                     <p>{result.random_poke_name}</p>
                     <p>{result.winner_poke_name}</p>

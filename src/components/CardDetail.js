@@ -3,7 +3,6 @@ import Button from "@material-ui/core/Button";
 
 const CardDetail = ({ onePokemon }) => {
   const history = useHistory();
-  console.log(onePokemon);
   const {
     species: { name },
     base_experience,
