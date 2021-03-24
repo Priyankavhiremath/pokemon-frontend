@@ -49,7 +49,6 @@ const LeaderBoard = () =>{
     useEffect( () =>{
         fetchData('https://pokemon-fight-api.herokuapp.com/game/leaderboard').
         then( data => setResults(data));
-        console.log(results)
     }, [])
  
      

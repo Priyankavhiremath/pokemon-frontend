@@ -3,7 +3,8 @@ import Card from "./Card";
 
 const Main = ({ pokemons }) => {
   return (
-    <Container maxWidth="md" className="main-container">
+    <div className="main-fullwidth-container">
+    <Container maxWidth="lg" className="main-container">
       <Grid container className="main-poke-content">
         <Grid
           container
@@ -22,6 +23,7 @@ const Main = ({ pokemons }) => {
         </Grid>
       </Grid>
     </Container>
+    </div>
   );
 };
 

@@ -20,12 +20,13 @@
 }
 
 .card-image{
-    background-image:
-    url('https://images-ext-1.discordapp.net/external/I7PT8y-wJzC5j0JeOVFvADnnFQwWrXOI8rC6HLHKiwg/%3Fid%3DOIP.GQYQNvdSJWLD474zL6H0vAHaEc%26pid%3DApi/https/tse2.mm.bing.net/th'); 
-    background-size: cover;
     border: 1px solid #DCB677;
     border-radius: 50%;
     box-shadow: 1px 2px 1px ;
+    position: relative;
+    background-image:
+    url('https://images-ext-1.discordapp.net/external/I7PT8y-wJzC5j0JeOVFvADnnFQwWrXOI8rC6HLHKiwg/%3Fid%3DOIP.GQYQNvdSJWLD474zL6H0vAHaEc%26pid%3DApi/https/tse2.mm.bing.net/th'); 
+    background-size: cover;
 }
 
 .MuiButton-text{

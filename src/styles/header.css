@@ -6,6 +6,9 @@
   height: 5em;
   width: auto;
   animation: pulse 7s infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes pulse {
@@ -17,9 +20,12 @@
   }
 }
 
-.img-header {
-  margin-left: 23em;  
+
+.header img{
+  margin-top: 0.9em;
+  /* margin-left: 40em;  */
 }
+
 @keyframes nudge {
   0%, 100% {
     transform: translate(0, 0);
@@ -44,7 +50,8 @@
 
 .header a, .header Link{
   float: left;
-  color: #DDB777;
+  /* color: #DDB777; */
+  color:black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -63,6 +70,7 @@
 
 .header a:hover {
   background-color: #F7DAA0;
+  color: black;
 }
 
 .header a.active {

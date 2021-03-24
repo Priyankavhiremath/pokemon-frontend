@@ -25,17 +25,21 @@ function App() {
     .then((data) => {
         setPokemons(data.results);
         data.results.map( pokemon => {
-          fetchdata(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`).then((data) => {
-            setPokemonDetail( prev => [...prev, data]);
-            setLoader(false)
-          });
+            console.log(pokemon.name)
+            if(pokemon.name !== 'nidoran-f'){
+                  fetchdata(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`).then((data) => {
+                  setPokemonDetail( prev => [...prev, data]);
+                  setLoader(false)
+                });
+            }
+            
         })
       }
     );
   };
 
   return (
-    <div className="App">
+    <div className="app-container">
 
       <Header />
       {isloader && <Loader />}
